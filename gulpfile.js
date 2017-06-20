@@ -9,11 +9,14 @@ var commonjs       = require('rollup-plugin-commonjs')
 var connect        = require('gulp-connect')
 var watch          = require('gulp-watch')
 
+var data           = require('./site-data.json')
+
 gulp.task('html', function(){
   return gulp.src('views/*.njk')
     .pipe(nunjucksRender({
-      path: [__dirname, 'views/'] // String or Array
-    }))
+      path: [__dirname, 'views/'],
+      data: data
+     }))
     .pipe(rename({
       extname: '.html'
     }))
