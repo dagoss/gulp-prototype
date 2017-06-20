@@ -1,0 +1,26 @@
+{
+  "name": "gulp-prototype",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "jquery": "^3.2.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-stream": "^1.20.0",
+    "typeface-arimo": "^0.0.22",
+    "typeface-overpass": "^0.0.22",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
