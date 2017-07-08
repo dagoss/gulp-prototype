@@ -1,13 +1,7 @@
 {% extends 'templates/base.njk' %}
 
 {% block body %}
-  {% if mine %}
-    <p>This is a {{ mine }}</p>
-  {% else %}
-    <p>This is just a page</p>
-    <p>Here is yet even more</p>
-    <p>OK it live re-loaded!</p>
-    <p>Title: {{ title }}</p>
-    <p>Data.Title: {{ data.title }}</p>
-  {% endif %}
+  <p>This is just a page</p>
+  <p>Below is how to use <code>site-data.json</code></p>
+  <p>Title: {{ title }}</p>
 {% endblock %}
