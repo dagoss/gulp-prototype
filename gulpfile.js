@@ -36,11 +36,16 @@ gulp.task('scripts', function(){
       },
       plugins: [
         resolve({ jsnext: true, main: true }),
-        commonjs()
+        commonjs({
+          include: [
+            'node_modules/**',
+            'javascripts/*.js'
+          ]
+        })
       ]
     })
     .pipe(source('app.js'))
-    .pipe(gulp.dest('./dist/js/app.js'));
+    .pipe(gulp.dest('./dist/resources/js/'));
 })
 
 gulp.task('fonts', function(){
